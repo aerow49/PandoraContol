@@ -45,8 +45,6 @@ namespace PandoraApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            userName = "madscience9@gmail.com";
-            password = "taranto";
             if (!onPandora)
             {
                 ChromeOptions options = new ChromeOptions();
