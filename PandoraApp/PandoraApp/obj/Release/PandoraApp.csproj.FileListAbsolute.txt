@@ -1,0 +1,22 @@
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\bin\Release\PandoraApp.exe.config
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\bin\Release\chromedriver.exe
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\bin\Release\PandoraApp.exe
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\bin\Release\WebDriver.dll
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\bin\Release\WebDriver.xml
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\obj\Release\PandoraApp.Pandora.resources
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\obj\Release\PandoraApp.Properties.Resources.resources
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\obj\Release\PandoraApp.csproj.GenerateResource.Cache
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\obj\Release\PandoraApp.exe
+C:\Users\Chase\documents\visual studio 2015\Projects\PandoraApp\PandoraApp\obj\Release\PandoraApp.pdb
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\PandoraApp.exe.config
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.pdb
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\chromedriver.exe
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\PandoraApp.exe
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\PandoraApp.pdb
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\WebDriver.dll
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\bin\Release\WebDriver.xml
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.csprojResolveAssemblyReference.cache
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.Pandora.resources
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.Properties.Resources.resources
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.csproj.GenerateResource.Cache
+C:\Users\madsc\Downloads\PandoraApp\PandoraApp\PandoraApp\obj\Release\PandoraApp.exe
