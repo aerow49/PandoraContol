@@ -38,6 +38,17 @@ namespace PandoraApp
       
         }
 
+        private void chromeStart()
+        {
+            ChromeOptions options = new ChromeOptions();
+            //options.AddExtension("/addBlock.crx");
+            //options.AddArgument("--no-startup-window");
+            ChromeDriverService service = ChromeDriverService.CreateDefaultService();
+            service.HideCommandPromptWindow = true;
+            driver = new ChromeDriver(service, options);
+            driver.Navigate().GoToUrl("http://www.pandora.com/account/sign-in");
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             userName =  textBox1.Text;
@@ -47,14 +58,7 @@ namespace PandoraApp
         {
             if (!onPandora)
             {
-                ChromeOptions options = new ChromeOptions();
-                //options.AddExtension("/addBlock.crx");
-                //options.AddArgument("--no-startup-window");
-                ChromeDriverService service = ChromeDriverService.CreateDefaultService();
-                service.HideCommandPromptWindow = true;
-                driver = new ChromeDriver(service, options);
-
-                driver.Navigate().GoToUrl("http://www.pandora.com/account/sign-in");
+                chromeStart();
                 if (userName != null && password != null)
                 {
                     driver.FindElement(By.Name("email")).SendKeys(userName);
@@ -159,21 +163,26 @@ namespace PandoraApp
 
         private void button7_Click(object sender, EventArgs e)
         {
-            try {
-                StreamReader file = new StreamReader("login.txt");
-                string name = file.ReadLine();
-                string pass = file.ReadLine();
-                file.Close();
-                if (name != null && pass != null)
-                {
-                    driver.FindElement(By.Name("email")).SendKeys(name);
-                    driver.FindElement(By.Name("password")).SendKeys(pass);
-                    driver.FindElement(By.ClassName("loginButton")).Click();
-                }
-            }
-            catch
+            if (!onPandora)
             {
-                Console.WriteLine("no saved stuff");
+                chromeStart();
+                try
+                {
+                    StreamReader file = new StreamReader("login.txt");
+                    string name = file.ReadLine().ToString();
+                    string pass = file.ReadLine().ToString();
+                    file.Close();
+                    if (name != null && pass != null)
+                    {
+                        driver.FindElement(By.Name("email")).SendKeys(name);
+                        driver.FindElement(By.Name("password")).SendKeys(pass);
+                        driver.FindElement(By.ClassName("loginButton")).Click();
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("no saved stuff");
+                }
             }
 
         }
