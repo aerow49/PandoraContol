@@ -36,3 +36,12 @@ C:\Users\Chase\Desktop\PandoraApp\PandoraApp\PandoraApp\obj\Debug\PandoraApp.csp
 C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\PandoraApp.exe.config
 C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.exe
 C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.pdb
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\chromedriver.exe
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\PandoraApp.exe
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\PandoraApp.pdb
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\WebDriver.dll
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\bin\Debug\WebDriver.xml
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.csprojResolveAssemblyReference.cache
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.Pandora.resources
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.Properties.Resources.resources
+C:\Users\Chase\Source\Repos\PandoraContol\PandoraApp\PandoraApp\obj\Debug\PandoraApp.csproj.GenerateResource.Cache
