@@ -9,7 +9,7 @@ namespace PandoraApp
     public partial class Pandora : Form
     {
         string userName, password;
-        bool playing, onPandora;
+        bool playing, onPandora,loginRemeber;
         int currentStation = 0;
         int originalSpot;
         IWebDriver driver;
@@ -18,18 +18,16 @@ namespace PandoraApp
             InitializeComponent();
             playing = true;
             onPandora = false;
+            loginRemeber = true;
             originalSpot = label5.Left;
         }
         private void setInformation()
         {
             try
             {
-                if (driver.FindElement(By.ClassName("songTitle")).Displayed)
-                {
 
-                    label5.Text = driver.FindElement(By.ClassName("songTitle")).Text;
-                    label6.Text = driver.FindElements(By.ClassName("stationNameText"))[currentStation].Text;
-                }
+                label5.Text = driver.FindElement(By.ClassName("songTitle")).Text;
+                label6.Text = driver.FindElement(By.ClassName("artistSummary")).Text;
             }
             catch
             {
@@ -65,10 +63,13 @@ namespace PandoraApp
                     driver.FindElement(By.Name("password")).SendKeys(password);
                     driver.FindElement(By.ClassName("loginButton")).Click();
                 }
-                using (StreamWriter file = new StreamWriter("login.txt"))
+                if (loginRemeber)
                 {
-                    file.WriteLine(userName);
-                    file.WriteLine(password);
+                    using (StreamWriter file = new StreamWriter("login.txt"))
+                    {
+                        file.WriteLine(userName);
+                        file.WriteLine(password);
+                    }
                 }
                 onPandora = true;
             }
@@ -170,7 +171,9 @@ namespace PandoraApp
                 {
                     StreamReader file = new StreamReader("login.txt");
                     string name = file.ReadLine().ToString();
+                    textBox1.Text = name;
                     string pass = file.ReadLine().ToString();
+                    textBox2.Text = pass;
                     file.Close();
                     if (name != null && pass != null)
                     {
@@ -178,6 +181,7 @@ namespace PandoraApp
                         driver.FindElement(By.Name("password")).SendKeys(pass);
                         driver.FindElement(By.ClassName("loginButton")).Click();
                     }
+                    onPandora = true;
                 }
                 catch
                 {
@@ -187,6 +191,17 @@ namespace PandoraApp
 
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (loginRemeber)
+            {
+                loginRemeber = false;
+            }
+            else
+            {
+                loginRemeber = true;
+            }
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
